@@ -20,6 +20,6 @@ namespace MVCBartender
                 .Build();
 
             host.Run();
-        }
-    }
-}
+        } // end Main method
+    } // end Program class
+} // end MVCBartender namespace
