@@ -6,7 +6,7 @@
         <h3>@p.Name</h3>
         <form id="@p.ProductID" asp-action="AddToCart"
               asp-controller="Cart" method="post">
-            <input type="hidden" asp-for="@p.ProductID" />
+            <input type="hidden" name="productId" value="@p.ProductID" />
             <input type="hidden" name="returnUrl"
                    value="@ViewContext.HttpContext.Request.PathAndQuery()" />
                 <button type="submit" class="btn btn-success btn-sm pull-right">
